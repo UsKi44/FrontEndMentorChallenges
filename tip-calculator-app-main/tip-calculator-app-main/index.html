@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h2
+      style="
+        color: hsl(183, 100%, 15%);
+        font-weight: 600;
+        letter-spacing: 10px;
+        text-align: center;
+      "
+    >
+      SPLI<br />TTER
+    </h2>
+    <div style="display: flex; justify-content: center">
+      <div class="main_content">
+        <div class="forms">
+          <h4>Bill</h4>
+          <label for="Bill" style="line-height: 20px; position: relative">
+            <i
+              class="fas fa-dollar-sign"
+              style="
+                position: absolute;
+                margin: 8px 0px 0 10px;
+                color: hsl(184, 14%, 56%);
+              "
+            ></i>
+            <input
+              type="number"
+              name="Bill"
+              class="bill_input"
+              id="billInput"
+            />
+          </label>
+          <div class="select_tip">
+            <h4 style="margin-top: 20px">Select Tip %</h4>
+            <div class="tip_amount" style="margin-top: -10px">
+              <table>
+                <tr>
+                  <th>
+                    <button id="5perc">5%</button>
+                  </th>
+                  <th>
+                    <button id="10perc">10%</button>
+                  </th>
+                  <th>
+                    <button id="15perc">15%</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <button id="25perc">25%</button>
+                  </th>
+                  <th>
+                    <button id="50perc">50%</button>
+                  </th>
+                  <th>
+                    <input
+                      type="number"
+                      placeholder="CUSTOM"
+                      class="cutom_button"
+                      id="custom"
+                    />
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <h4 style="margin-top: 10px">Number of People</h4>
+            <label for="Bill" style="line-height: 20px; position: relative">
+              <i
+                class="fas fa-user"
+                style="
+                  position: absolute;
+                  margin: 8px 0px 0 10px;
+                  color: hsl(184, 14%, 56%);
+                "
+              ></i>
+              <input
+                type="number"
+                name="Bill"
+                class="bill_input"
+                id="pplAmount"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="result_back">
+          <table>
+            <tr>
+              <th>
+                <h6 style="text-align: left">Tip Amount</h6>
+                <p
+                  style="
+                    margin-top: -10px;
+                    font-size: 11px;
+                    opacity: 0.6;
+                    color: white;
+                    text-align: left;
+                  "
+                >
+                  / person
+                </p>
+              </th>
+              <th>
+                <h1>$</h1>
+              </th>
+
+              <th>
+                <h1 id="tipAmount"></h1>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h6>Total</h6>
+                <p
+                  style="
+                    margin-top: -10px;
+                    font-size: 11px;
+                    opacity: 0.6;
+                    color: white;
+                    text-align: left;
+                  "
+                >
+                  / person
+                </p>
+              </th>
+              <th>
+                <h1>$</h1>
+              </th>
+              <th>
+                <h1 id="personCost"></h1>
+              </th>
+            </tr>
+          </table>
+
+          <button class="reset_btn" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  margin: 100px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.main_content {
+  width: auto;
+  height: auto;
+  background-color: black;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 3px 16px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.forms {
+  margin: 20px;
+  width: auto;
+  height: auto;
+  margin: 10px 0px 20px 30px;
+}
+.forms h4 {
+  text-align: left;
+  color: hsl(184, 14%, 56%);
+}
+
+.bill_input {
+  border: none;
+  outline-style: none;
+  background-color: hsl(185, 42%, 90%);
+  width: 275px;
+  height: 30px;
+  border-radius: 2px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  font-weight: 700;
+  padding-right: 1em;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+}
+
+.bill_input:focus {
+  border: 2px solid hsl(183, 100%, 15%);
+  border-radius: 2px;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+table button {
+  background-color: hsl(183, 100%, 15%);
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+button:focus {
+  background-color: hsl(180, 82%, 41%);
+  color: hsl(183, 100%, 15%);
+}
+
+.result_back {
+  margin: 15px 20px 15px 15px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+
+.result_back table {
+  width: 100%;
+  margin: 30px;
+  margin-left: 15px;
+}
+.result_back h6 {
+  color: white;
+  text-align: left;
+}
+
+.result_back h1 {
+  font-size: 35px;
+  color: #12bebe;
+}
+
+.amount_result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cutom_button {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  border: none;
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.amount_result div {
+  margin: 0px;
+}
+
+.reset_btn {
+  background-color: hsl(180, 82%, 41%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  height: 40px;
+  width: 300px;
+  margin: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 60px;
+  cursor: pointer;
+}
