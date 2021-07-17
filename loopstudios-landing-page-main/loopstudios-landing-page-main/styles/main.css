@@ -82,6 +82,12 @@ body {
   border-radius: 2px;
 }
 
+.hamburger {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
 .mainInfo {
   margin: 70px 100px 0px 135px;
 }
@@ -228,5 +234,14 @@ body {
 .footer .footer_in .footer_nav .footer_nav div:hover:after {
   width: 100%;
   background: white;
+}
+
+.footer .footer_in .soc_logos {
+  float: right;
+}
+
+.footer .footer_in .soc_logos a {
+  margin-right: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
