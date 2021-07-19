@@ -83,6 +83,7 @@ body {
 }
 
 .hamburger {
+  display: none;
   cursor: pointer;
   font-size: 20px;
   color: white;

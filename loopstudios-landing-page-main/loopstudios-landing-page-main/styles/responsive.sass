@@ -1,5 +1,28 @@
-$layout-breakpoint-small: 960px
+$small: 375px
 
-@media (min-width: $layout-breakpoint-small)
-.hide-extra-small
-    display: none
+@media screen and (max-width: $small)
+    .navigation
+        display: none
+    .nav_absolute
+        margin-top: 50px
+        width: 90%
+        img
+            height: 30px
+            width: 150px
+            margin-left: auto
+            margin-right: auto
+            margin-top: auto
+
+        .hamburger
+            display: block
+            height: 30px
+            width: 30px
+            text-align: center
+            i
+                font-size: 25px
+    .Immersive
+        margin-left: 60px
+        height: 200px
+        width: 260px
+        h1
+            font-size: 16px
