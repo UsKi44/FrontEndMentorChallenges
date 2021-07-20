@@ -4,12 +4,17 @@
   }
   .nav_absolute {
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nav_absolute img {
     height: 30px;
     width: 150px;
-    margin-left: auto;
+    margin-left: -10px;
     margin-right: auto;
     margin-top: auto;
   }
@@ -24,11 +29,23 @@
   }
   .Immersive {
     margin-left: 60px;
-    height: 200px;
+    height: auto;
     width: 260px;
   }
   .Immersive h1 {
-    font-size: 16px;
+    font-size: 30px;
+  }
+  .mainInfo {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .interact_div {
+    position: relative;
+  }
+  .interactive_img {
+    height: 230px;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
