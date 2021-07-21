@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+body
+    font-family: "Roboto",sans-serif
+    margin: 0
+    padding: 20px
+    box-sizing: border-box
+    background-color: hsl(207, 26%, 17%)
+    img
+        max-width: 100%
+
+.Header_parrent
+    padding-left: 20px
+    padding-right: 20px
+
+    .Header
+        display: flex
+        justify-content: space-between
+        color: white
+        .modes
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+
+.country_divs
+    padding: 5px 20px 5px 20px
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 20px
+    .inner_div
+        box-shadow: 1px 4px 18px -6px #000000
+        background-color: hsl(209, 23%, 22%)
+
+    h3
+        padding: 5px
+        font-family: "Roboto",sans-serif
+        font-weight: 700
+        font-size: 20px
+        color: white
+    h4
+        padding: 5px
+        font-family: "Roboto",sans-serif
+        font-weight: 500
+        color: white
+
+@media (min-width: 376px)
+    .Header
+        margin-left: 5px
+        margin-right: 5px
+        h1
+            font-size: 16px
+    .country_divs
+        grid-template-columns: repeat(2,1fr)
+
+@media (min-width:414px)
+    .Header
+        margin-left: 10px
+        margin-right: 10px
+    .country_divs
+        grid-template-columns: repeat(3,1fr)
+
+@media ( min-width:992px )
+    .Header
+        margin-left: 30px
+        margin-right: 30px
+    .country_divs
+        grid-template-columns: repeat(4,2fr)
