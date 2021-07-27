@@ -2,12 +2,15 @@
 
 body
     font-family: "Roboto",sans-serif
-    margin: 0
-    padding: 20px
+    margin: 10px
+    padding: 0
     box-sizing: border-box
     background-color: hsl(207, 26%, 17%)
     img
         max-width: 100%
+    ::placeholder
+        color: white
+        font-family: "Roboto", sans-serif
 
 .Header_parrent
     padding-left: 20px
@@ -17,11 +20,16 @@ body
         display: flex
         justify-content: space-between
         color: white
+        .appName
+            cursor: pointer
+            font-size: 24px
         .modes
             display: flex
             justify-content: center
             align-items: center
             cursor: pointer
+            .modeChanger
+                margin-left: 10px
 
 .country_divs
     padding: 5px 20px 5px 20px
@@ -43,20 +51,123 @@ body
         font-family: "Roboto",sans-serif
         font-weight: 500
         color: white
+.search_bar
+    display: flex
+    justify-content: space-between
+    padding: 5px 20px 5px 20px
+    margin-bottom: 10px
+    #search_icon
+        position: absolute
+        padding: 7px 0px 2px 10px
+        color: white
+    .searchCountry
+        width: 250px
+        height: 35px
+        color: white
+        background-color: hsl(209, 23%, 22%)
+        border: none
+        border-radius: 2px
+        outline-style: none
+        padding-left: 35px
+        font-size: 16px
+        box-shadow: -1px 2px 20px 5px rgba(0,0,0,0.05)
+    .select
+        width: 170px
+        height: 35px
+        color: white
+        background-color: hsl(209, 23%, 22%)
+        border: none
+        border-radius: 2px
+        outline-style: none
+        font-size: 15px
+        font-family: "Roboto",sans-serif
+        text-align: center
+        transition: 0.4s
+        cursor: pointer
+        box-shadow: -1px 2px 20px 5px rgba(0,0,0,0.05)
+        padding: 5px
 
-@media (min-width: 376px)
-    .Header
-        margin-left: 5px
-        margin-right: 5px
-        h1
-            font-size: 16px
+@media (max-width: 375px)
+    .Header_parrent
+        .Header
+            margin-left: auto
+            margin-right: auto
+            width: 100%
+            .appName
+                font-size: 16px
+            .modes
+                font-family: "Roboto",sans-serif
+
+    .search_bar
+        width: 100%
+
+        .searchCountry
+            width: 160px
+            font-size: 12px
+
+    .country_divs
+        grid-template-columns: repeat(1,1fr)
+
+@media (min-width: 375px)
+    .Header_parrent
+        .Header
+            margin-left: auto
+            margin-right: auto
+            width: 100%
+            .appName
+                font-size: 16px
+            .modes
+                font-family: "Roboto",sans-serif
+
+    .search_bar
+        width: 100%
+
+        .searchCountry
+            width: 160px
+            font-size: 12px
+
     .country_divs
         grid-template-columns: repeat(2,1fr)
 
 @media (min-width:414px)
-    .Header
-        margin-left: 10px
-        margin-right: 10px
+    .Header_parrent
+        .Header
+            margin-left: 30px
+            width: 100%
+            margin-right: 30px
+            .appName
+                font-size: 20px
+            .modes
+                font-family: "Roboto",sans-serif
+
+    .search_bar
+        width: 102%
+
+        .searchCountry
+            width: 160px
+            font-size: 12px
+
+    .country_divs
+        grid-template-columns: repeat(3,1fr)
+
+@media (min-width: 600px)
+    .Header_parrent
+        .Header
+            margin-left: auto
+            margin-right: auto
+            width: 100%
+
+            .appName
+                font-size: 20px
+            .modes
+                font-family: "Roboto",sans-serif
+    .search_bar
+        width: 97%
+
+        .searchCountry
+            width: 160px
+            font-size: 12px
+
     .country_divs
         grid-template-columns: repeat(3,1fr)
 
@@ -64,5 +175,14 @@ body
     .Header
         margin-left: 30px
         margin-right: 30px
+        width: 100%
+
+    .search_bar
+        width: 97%
+
+        .searchCountry
+            width: 160px
+            font-size: 12px
+
     .country_divs
         grid-template-columns: repeat(4,2fr)
