@@ -6,14 +6,14 @@ const URL = "https://restcountries.eu/rest/v2/all";
 
 function Countries() {
   const [countries, setCountries] = useState([]);
-  const countryData = async () => {
+  const countriesData = async () => {
     const response = await fetch(URL);
     const countries = await response.json();
     setCountries(countries);
   };
 
   useEffect(() => {
-    countryData();
+    countriesData();
   }, []);
 
   const removeCountry = (numericCode) => {
