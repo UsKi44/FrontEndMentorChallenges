@@ -2,7 +2,7 @@ import React from "react";
 
 function Filter() {
   return (
-    <div className="search_bar">
+    <div className="search_bar" id="searchBar">
       <div>
         <form className="fm-control">
           <i id="search_icon" className="fas fa-search"></i>

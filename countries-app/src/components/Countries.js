@@ -16,6 +16,13 @@ function Countries() {
     countryData();
   }, []);
 
+  const removeCountry = (numericCode) => {
+    const newCountry = countries.filter(
+      (country) => country.numericCode !== numericCode
+    );
+    setCountries(newCountry);
+  };
+
   return (
     <div className="country_divs">
       {countries.map((country) => {
@@ -23,15 +30,26 @@ function Countries() {
           country;
         return (
           <div key={numericCode} className="inner_div">
-            <Link to={`/countries/${name}`} className="country_link">
+            <div>
+              <img src={flag} alt={name} />
+              <h3>{name}</h3>
+              <h4>Population: {population}</h4>
+              <h4>Region: {region}</h4>
+              <h4>Capital: {capital}</h4>
+            </div>
+            <div className="more_options">
               <div>
-                <img src={flag} alt={name} />
-                <h3>{name}</h3>
-                <h4>Population: {population}</h4>
-                <h4>Region: {region}</h4>
-                <h4>Capital: {capital}</h4>
+                <Link to={`/countries/${name}`}>Learn More</Link>
               </div>
-            </Link>
+              <div>
+                <button
+                  className="removeCountry"
+                  onClick={() => removeCountry(numericCode)}
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
           </div>
         );
       })}
