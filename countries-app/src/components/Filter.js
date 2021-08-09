@@ -15,7 +15,7 @@ function Filter() {
           />
         </form>
       </div>
-      <div>
+      <div className="select_continent">
         <select name="select" id="select" className="select">
           <option value="Filter by Region">Filter by Region</option>
           <option value="Africa">Africa</option>
