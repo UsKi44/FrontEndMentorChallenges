@@ -24,7 +24,7 @@ function Countries() {
   };
 
   return (
-    <div className="country_divs">
+    <div className="country_divs" id="countriesDiv">
       {countries.map((country) => {
         const { name, numericCode, population, region, capital, flag } =
           country;

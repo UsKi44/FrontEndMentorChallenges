@@ -562,3 +562,37 @@
                     height: 35px
                     font-size: 16px
                     cursor: pointer
+        .country_divs
+            grid-template-columns: repeat(4, 1fr)
+            .inner_div
+                .toCenter
+
+                .more_options
+                    .toCenter2
+                        width: 90%
+
+                        a
+                            transition: 0.5s
+                            &:hover
+                                color: blue
+                        .removeCountry
+                            transition: 0.5s
+                            cursor: pointer
+                            &:hover
+                                background-color: red
+                                color: white
+        .Country
+            padding-left: 30px
+            padding-right: 30px
+            a
+                .go_back
+                    cursor: pointer
+            .info_content
+                .info
+                    display: flex
+                    justify-content: space-around
+                    .img_div
+                        width: auto
+                        height: auto
+                        img
+                            width: 500px

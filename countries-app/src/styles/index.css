@@ -6,6 +6,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #202c37;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
 
 body img {
@@ -13,22 +15,80 @@ body img {
 }
 
 body ::-webkit-input-placeholder {
-  color: white;
   font-family: "Roboto", sans-serif;
 }
 
 body :-ms-input-placeholder {
-  color: white;
   font-family: "Roboto", sans-serif;
 }
 
 body ::-ms-input-placeholder {
-  color: white;
   font-family: "Roboto", sans-serif;
 }
 
 body ::placeholder {
-  color: white;
   font-family: "Roboto", sans-serif;
+}
+
+body ::-webkit-input-placeholder #header {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+body :-ms-input-placeholder #header {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+body ::-ms-input-placeholder #header {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+body ::placeholder #header {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+body.light {
+  background-color: white;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+body.light h1 {
+  color: black;
+}
+
+body.light h3 {
+  color: black;
+}
+
+body.light h4 {
+  color: black;
+}
+
+body.light input {
+  background-color: white;
+}
+
+body.light ul li {
+  color: black;
+}
+
+body.light #header.light {
+  background-color: white;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+  -webkit-box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.light #header.light h1 {
+  color: black;
+}
+
+body.light #header.light i {
+  color: black;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Filter() {
+  // let search = document.querySelector("#search");
+  // const [input, setInput] = useState("");
+  // const [result, setResult] = useState([]);
+
+  // search.addEventListener("input", (e) => {
+  //   const { value } = e.target;
+
+  //   setInput(value);
+  // });
+
+  // useEffect(() => {
+  //   const searchCountry = async () => {
+  //     const response = await fetch(
+  //       `https://restcountries.eu/rest/v2/name/${input}`
+  //     );
+  //     const result = await response.json();
+  //     setResult(result);
+  //   };
+  //   console.log(result);
+  // }, []);
+
   return (
     <div className="search_bar" id="searchBar">
       <div className="search_by_name">
-        <form className="fm-control">
+        <form className="fm-control" id="form">
           <i id="search_icon" className="fas fa-search"></i>
           <input
             type="search"

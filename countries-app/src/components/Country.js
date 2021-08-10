@@ -19,7 +19,7 @@ function Country() {
   }, [exactCountry]);
 
   return (
-    <div className="Country">
+    <div className="Country" id="country">
       <Link to="/">
         <button className="go_back">
           <i className="fas fa-long-arrow-alt-left"></i>

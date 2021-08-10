@@ -773,5 +773,49 @@
     font-size: 16px;
     cursor: pointer;
   }
+  body .country_divs {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  body .country_divs .inner_div .more_options .toCenter2 {
+    width: 90%;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 a:hover {
+    color: blue;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 .removeCountry {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 .removeCountry:hover {
+    background-color: red;
+    color: white;
+  }
+  body .Country {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  body .Country a .go_back {
+    cursor: pointer;
+  }
+  body .Country .info_content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .Country .info_content .info .img_div {
+    width: auto;
+    height: auto;
+  }
+  body .Country .info_content .info .img_div img {
+    width: 500px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
