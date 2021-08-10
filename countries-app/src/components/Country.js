@@ -16,7 +16,7 @@ function Country() {
     };
 
     fetchCountryData();
-  }, []);
+  }, [exactCountry]);
 
   return (
     <div className="Country">

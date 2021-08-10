@@ -3,7 +3,7 @@ import React from "react";
 function Filter() {
   return (
     <div className="search_bar" id="searchBar">
-      <div>
+      <div className="search_by_name">
         <form className="fm-control">
           <i id="search_icon" className="fas fa-search"></i>
           <input
