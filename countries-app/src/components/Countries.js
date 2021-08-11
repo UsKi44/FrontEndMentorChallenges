@@ -31,26 +31,26 @@ function Countries() {
         return (
           <div key={numericCode} className="inner_div">
             <div className="toCenter">
-              <div>
+              <div className="toCenterChild">
                 <img src={flag} alt={name} />
-                <h3>{name}</h3>
+                <h3 className="countryName">{name}</h3>
                 <h4>Population: {population}</h4>
                 <h4>Region: {region}</h4>
                 <h4>Capital: {capital}</h4>
-              </div>
-            </div>
-            <div className="more_options">
-              <div className="toCenter2">
-                <div>
-                  <Link to={`/countries/${name}`}>Learn More</Link>
-                </div>
-                <div>
-                  <button
-                    className="removeCountry"
-                    onClick={() => removeCountry(numericCode)}
-                  >
-                    Remove
-                  </button>
+                <div className="more_options">
+                  <div className="toCenter2">
+                    <div>
+                      <Link to={`/countries/${name}`}>Learn More</Link>
+                    </div>
+                    <div>
+                      <button
+                        className="removeCountry"
+                        onClick={() => removeCountry(numericCode)}
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

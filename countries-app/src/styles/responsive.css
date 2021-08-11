@@ -164,7 +164,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 78%;
+    width: 100%;
   }
   body .country_divs .inner_div .more_options .toCenter2 a {
     color: white;
@@ -394,12 +394,17 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 70%;
+    width: 100%;
   }
   body .country_divs .inner_div .more_options .toCenter2 a {
     color: white;
     text-decoration: none;
     font-size: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 a:hover {
+    color: blue;
   }
   body .country_divs .inner_div .more_options .toCenter2 button {
     border: none;
@@ -407,8 +412,15 @@
     width: 70px;
     color: white;
     background-color: #2b3945;
-    -webkit-box-shadow: -1px 2px 10px 5px rgba(0, 0, 0, 0.05);
-            box-shadow: -1px 2px 10px 5px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: -1px 2px 10px 5px #2b26260d;
+            box-shadow: -1px 2px 10px 5px #2b26260d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  body .country_divs .inner_div .more_options .toCenter2 button:hover {
+    background-color: red;
+    color: white;
   }
   body .Country {
     padding-left: 15px;
@@ -429,6 +441,7 @@
     outline-style: none;
     font-size: 16px;
     color: white;
+    cursor: pointer;
   }
   body .Country a .go_back i {
     padding-right: 10px;
@@ -527,7 +540,7 @@
     width: 300px;
   }
   body .country_divs .inner_div .more_options .toCenter2 {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -576,7 +589,7 @@
     width: 300px;
   }
   body .country_divs .inner_div .more_options .toCenter2 {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -632,7 +645,7 @@
     width: 300px;
   }
   body .country_divs .inner_div .more_options .toCenter2 {
-    width: 78%;
+    width: 100%;
   }
   body .country_divs .inner_div .more_options .toCenter2 button {
     height: 30px;
@@ -673,7 +686,7 @@
     font-weight: 500;
   }
   body .country_divs .inner_div .more_options .toCenter2 {
-    width: 60%;
+    width: 100%;
   }
   body .country_divs .inner_div .more_options .toCenter2 a {
     font-size: 20px;
@@ -778,7 +791,7 @@
         grid-template-columns: repeat(4, 1fr);
   }
   body .country_divs .inner_div .more_options .toCenter2 {
-    width: 90%;
+    width: 100%;
   }
   body .country_divs .inner_div .more_options .toCenter2 a {
     -webkit-transition: 0.5s;

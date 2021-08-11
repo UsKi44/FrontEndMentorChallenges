@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 function Filter() {
-  // let search = document.querySelector("#search");
-  // const [input, setInput] = useState("");
-  // const [result, setResult] = useState([]);
+  useEffect(() => {
+    const searchCountry = document.getElementById("search");
+    searchCountry.addEventListener("input", (e) => {
+      const { value } = e.target;
+      const countryName = document.querySelectorAll(".countryName");
 
-  // search.addEventListener("input", (e) => {
-  //   const { value } = e.target;
-
-  //   setInput(value);
-  // });
-
-  // useEffect(() => {
-  //   const searchCountry = async () => {
-  //     const response = await fetch(
-  //       `https://restcountries.eu/rest/v2/name/${input}`
-  //     );
-  //     const result = await response.json();
-  //     setResult(result);
-  //   };
-  //   console.log(result);
-  // }, []);
+      countryName.forEach((name) => {
+        console.log(name.innerText);
+        if (name.innerText.toLowerCase().includes(value.toLowerCase())) {
+          name.parentElement.parentElement.parentElement.style.display =
+            "block";
+        } else {
+          name.parentElement.parentElement.parentElement.style.display = "none";
+        }
+      });
+    });
+  }, []);
 
   return (
     <div className="search_bar" id="searchBar">
