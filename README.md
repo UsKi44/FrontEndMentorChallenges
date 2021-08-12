@@ -1,7 +1,7 @@
 # FrontEndMentorChallenges
 Tip-calculator https://uski44.github.io/tip-calculator-app-main/tip-calculator-app-main/
 
-loopstudios-landing-page https://front-end-mentor-challenges-loopstudios-landing-page.vercel.app/
+loopstudios-landing-page https://uski44.github.io/loopstudios-landing-page-main/loopstudios-landing-page-main/
 
 REST Countries API with color theme switcher with (React.js)   https://countries-app-teal.vercel.app/
 
