@@ -1,5 +1,5 @@
 # FrontEndMentorChallenges
-Tip-calculator https://front-end-mentor-challenges-tip-calculator.vercel.app/
+Tip-calculator https://uski44.github.io/tip-calculator-app-main/tip-calculator-app-main/
 
 loopstudios-landing-page https://front-end-mentor-challenges-loopstudios-landing-page.vercel.app/
 
