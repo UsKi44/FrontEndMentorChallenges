@@ -1,0 +1,22 @@
+@media (max-width: 320px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  body img {
+    max-width: 100%;
+  }
+  body .Countries {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 20px;
+  }
+  body .Countries .country_divs {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 1fr;
+  }
+  body .Countries .country_divs h4 {
+    color: white;
+  }
+}
+/*# sourceMappingURL=Countries.css.map */

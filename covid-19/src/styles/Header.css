@@ -65,6 +65,7 @@ body {
   body .Header_parrent .Header .logo_img {
     height: 20px;
     widows: 20px;
+    z-index: 1000;
   }
   body .Header_parrent .Header .hamburger {
     background-color: red;
