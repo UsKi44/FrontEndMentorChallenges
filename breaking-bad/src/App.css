@@ -2,12 +2,46 @@
   text-align: center;    
 }
 
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.search-comp {
+  margin-top: 170px;
+}
+
+.parent {
+  width: 100%;
+  display: grid;
+  justify-content: center;  
+}
+
+.toggled {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);  
+  padding: 30px 50px 0 50px;
+}
+
+.card {  
+  animation: opacityChange 0.5s;
+}
+
+
+
 .search {
   background-color: #192d1cb0;
   border: none;
   border-radius: 10px;
   min-width: 450px;
   height: 40px;
-  font-size: 15px;
+  font-size: 18px;  
+  color: white;
+  padding-left: 30px;
+  
 }
 
