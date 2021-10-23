@@ -1,3 +1,4 @@
+Some of this apis may not work (Problem: I did it quite long ago and they are, pretty old, so api request may not work, but u can also see the internal code of those projects)
 # FrontEndMentorChallenges
 Tip-calculator https://uski44.github.io/tip-calculator-app-main/tip-calculator-app-main/
 
