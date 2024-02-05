@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+body {    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    
+    background-color: #69140ef3 !important;
+
+    font-family: 'Protest Riot', sans-serif !important;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#acceptBtn {
+    padding: 10px 30px !important;    
+}
+
+#dennyBtn {
+    padding: 10px 30px !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+#buttonsDiv {
+    display: flex;
+}
